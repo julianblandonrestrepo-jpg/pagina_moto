@@ -106,3 +106,193 @@
 
 </body>
 </html>
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Speed Motors</title>
+
+    <style>
+
+        body{
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        /* ENCABEZADO */
+        header{
+            background-color: #111;
+            color: white;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .logo{
+            font-size: 50px;
+        }
+
+        /* GALERÍA */
+        .galeria{
+            padding: 50px;
+            text-align: center;
+        }
+
+        .galeria h2{
+            margin-bottom: 30px;
+            color: #222;
+        }
+
+        .contenedor-galeria{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .moto{
+            background: white;
+            width: 300px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            transition: transform 0.3s;
+        }
+
+        .moto:hover{
+            transform: scale(1.05);
+        }
+
+        .moto img{
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+        }
+
+        .moto h3{
+            margin: 15px 0 10px;
+        }
+
+        .moto p{
+            padding: 0 15px 20px;
+            color: #555;
+        }
+
+        /* COMENTARIOS */
+        .comentarios{
+            background: #222;
+            color: white;
+            padding: 50px;
+            text-align: center;
+        }
+
+        .comentarios h2{
+            margin-bottom: 40px;
+        }
+
+        .contenedor-comentarios{
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .comentario{
+            background: #333;
+            width: 300px;
+            padding: 20px;
+            border-radius: 10px;
+        }
+
+        .comentario p{
+            font-style: italic;
+            line-height: 1.5;
+        }
+
+        .cliente{
+            margin-top: 15px;
+            font-weight: bold;
+            color: #00cc66;
+        }
+
+    </style>
+
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+
+        <div class="logo">🏍️</div>
+        <h1>Speed Motors</h1>
+
+    </header>
+
+    <!-- GALERÍA DE MOTOS -->
+    <section class="galeria">
+
+        <h2>Galería de Motos</h2>
+
+        <div class="contenedor-galeria">
+
+            <div class="moto">
+                <img src="img/r1.jpg" alt="Yamaha R1">
+                <h3>Yamaha YZF-R1</h3>
+                <p>Potencia, velocidad y diseño deportivo de alto nivel.</p>
+            </div>
+
+            <div class="moto">
+                <img src="img/cb500.jpg" alt="Honda CB500F">
+                <h3>Honda CB500F</h3>
+                <p>Ideal para ciudad con excelente comodidad y rendimiento.</p>
+            </div>
+
+            <div class="moto">
+                <img src="img/bmw.jpg" alt="BMW R1250 GS">
+                <h3>BMW R 1250 GS</h3>
+                <p>Perfecta para aventuras y viajes de larga distancia.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- COMENTARIOS DE CLIENTES -->
+    <section class="comentarios">
+
+        <h2>Experiencias de Nuestros Clientes</h2>
+
+        <div class="contenedor-comentarios">
+
+            <div class="comentario">
+                <p>
+                    "La atención fue excelente y mi Yamaha R1 llegó en perfectas condiciones.
+                    Recomiendo totalmente Speed Motors."
+                </p>
+                <div class="cliente">- Carlos Méndez</div>
+            </div>
+
+            <div class="comentario">
+                <p>
+                    "Compré una Honda CB500F y ha sido una experiencia increíble.
+                    Muy buenos precios y asesoría profesional."
+                </p>
+                <div class="cliente">- Laura Gómez</div>
+            </div>
+
+            <div class="comentario">
+                <p>
+                    "Excelente servicio postventa y motos de gran calidad.
+                    Sin duda volveré a comprar aquí."
+                </p>
+                <div class="cliente">- Andrés Ramírez</div>
+            </div>
+
+        </div>
+
+    </section>
+
+</body>
+</html>
