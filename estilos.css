@@ -1,0 +1,142 @@
+/* ESTILOS GENERALES */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f4f4f6;
+    color: #333;
+}
+
+/* ENCABEZADO */
+header {
+    background: linear-gradient(135deg, #111, #2c3e50);
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+    border-bottom: 6px solid #e63946; /* Toque rojo deportivo */
+}
+
+.logo {
+    font-size: 60px;
+    margin-bottom: 10px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+header h1 {
+    font-size: 36px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+
+/* SECCIÓN INICIO */
+.inicio {
+    text-align: center;
+    padding: 60px 20px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+}
+
+.inicio h2 {
+    font-size: 32px;
+    color: #111;
+    margin-bottom: 20px;
+}
+
+.descripcion {
+    max-width: 800px;
+    margin: auto;
+    font-size: 18px;
+    line-height: 1.7;
+    color: #555;
+}
+
+/* SECCIÓN CATÁLOGO */
+.seccion-catalogo {
+    padding: 50px 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.titulo-categoria {
+    font-size: 28px;
+    color: #111;
+    border-left: 5px solid #e63946;
+    padding-left: 15px;
+    margin-top: 50px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+}
+
+/* GRID RESPONSIVO PARA LAS MOTOS */
+.grid-catalogo {
+    display: grid;
+    /* Esto crea columnas automáticas que no bajan de 300px de ancho */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+/* TARJETAS DE MOTOS */
+.tarjeta-moto {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+.tarjeta-moto:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+}
+
+/* ESTILOS DE LA IMAGEN */
+.tarjeta-moto img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover; /* Evita que las imágenes se deformen */
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+
+.tarjeta-moto h3 {
+    font-size: 22px;
+    color: #111;
+    margin-bottom: 10px;
+}
+
+/* PRECIO */
+.precio {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e63946;
+    margin-bottom: 20px;
+}
+
+/* BOTÓN DE COMPRA */
+.btn-comprar {
+    background-color: #111;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 6px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+}
+
+.btn-comprar:hover {
+    background-color: #e63946;
+}
+
+.btn-comprar:active {
+    transform: scale(0.98); /* Pequeño efecto al hacer clic */
+}
